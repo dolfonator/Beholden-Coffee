@@ -141,7 +141,7 @@ p { margin: 0 0 1rem; }
 .container { width: min(100% - 2.6rem, var(--maxw)); margin-inline: auto; }
 .section { position: relative; padding: var(--section-pad) 0; }
 /* signature / conversion sections get more top air so they feel like arrivals */
-.flavors, .book { padding-top: var(--section-pad-lg); }
+.book { padding-top: var(--section-pad-lg); }
 .mt { margin-top: var(--space-6); }
 
 /* hairline between bands so each section reads as its own field */
@@ -438,12 +438,11 @@ h2 em, .hero-title em { font-style: italic; color: var(--action); }
   letter-spacing: .02em; padding: .35rem .85rem; border-radius: 999px; border: 1px solid var(--line);
 }
 
-/* ---------- flavors (DARK section) ---------- */
+/* ---------- dark sections (reviews, etc.) ---------- */
 .section--dark { background: var(--espresso); color: var(--dark-copy-soft); }
 
 /* Object headers keep numbered wayfinding while breaking the repeated
    eyebrow+rule scaffold. Each section pairs the numeral with its own artifact. */
-.flavors-head,
 .gallery-head,
 .reviews-head,
 .visit-head {
@@ -451,19 +450,16 @@ h2 em, .hero-title em { font-style: italic; color: var(--action); }
   margin: 0 auto var(--head-gap);
   text-align: center;
 }
-.flavors-head .section-num,
 .gallery-head .section-num,
 .reviews-head .section-num,
 .visit-head .section-num {
   margin-bottom: .55rem;
 }
-.flavors-head h2,
 .gallery-head h2,
 .reviews-head h2,
 .visit-head h2 {
   margin-bottom: 0;
 }
-.flavors-lead,
 .reviews-lead {
   color: var(--dark-copy-soft);
   font-size: 1.1rem;
@@ -479,50 +475,6 @@ h2 em, .hero-title em { font-style: italic; color: var(--action); }
   max-width: 56ch;
   margin: 1.1rem auto 0;
 }
-
-.flavors-head .flavor-preview { margin-bottom: 1.1rem; }
-.flavor-preview { display: flex; justify-content: center; gap: .55rem; margin-bottom: 1.3rem; }
-.flavor-dot { width: 13px; height: 13px; border-radius: 50%; box-shadow: 0 0 0 3px var(--navy-ring); }
-.flavor-dot--original  { background: radial-gradient(circle at 32% 28%, var(--honey), var(--action) 82%); }
-.flavor-dot--soy       { background: radial-gradient(circle at 32% 28%, var(--cream-3), var(--brand-dark) 82%); }
-.flavor-dot--yangnyeom { background: radial-gradient(circle at 32% 28%, var(--green), var(--brand-deep) 82%); }
-.flavor-dot--buffalo   { background: radial-gradient(circle at 32% 28%, var(--brand), var(--brand-dark) 82%); }
-.flavor-dot--cheese    { background: radial-gradient(circle at 32% 28%, var(--cream), var(--honey) 82%); }
-.flavor-dot--ritual    { background: radial-gradient(circle at 32% 28%, var(--honey), var(--action) 82%); }
-.flavor-dot--signature { background: radial-gradient(circle at 32% 28%, var(--cream-3), var(--green) 82%); }
-.flavor-dot--pairings  { background: radial-gradient(circle at 32% 28%, var(--brand), var(--brand-dark) 82%); }
-
-.flavor-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: var(--gap); }
-.flavor-card {
-  background: var(--espresso-2); border: 1px solid var(--line-dark); border-radius: var(--radius);
-  padding: var(--space-6) var(--space-5);
-  transition: transform .2s ease, border-color .2s ease;
-}
-.flavor-card:hover { transform: translateY(-4px); border-color: var(--honey-border); }
-.flavor-card h3 { color: var(--white); margin-bottom: .35em; }
-.flavor-card p { font-size: .92rem; color: var(--dark-copy-soft); margin: 0; line-height: 1.5; }
-
-.flavor-swatch {
-  display: block;
-  width: 52px;
-  height: 52px;
-  margin-bottom: 1.1rem;
-  border-radius: 42% 58% 60% 40% / 45% 45% 55% 55%;
-  box-shadow: inset 0 -6px 10px var(--navy-shadow-soft), 0 6px 14px var(--navy-shadow-soft);
-}
-.flavor-swatch--original  { background: radial-gradient(circle at 32% 26%, var(--honey), var(--action) 82%); }
-.flavor-swatch--soy       { background: radial-gradient(circle at 32% 26%, var(--cream-3), var(--brand-dark) 82%); }
-.flavor-swatch--yangnyeom { background: radial-gradient(circle at 32% 26%, var(--green), var(--brand-deep) 82%); }
-.flavor-swatch--buffalo   { background: radial-gradient(circle at 32% 26%, var(--brand), var(--brand-dark) 82%); }
-.flavor-swatch--cheese    { background: radial-gradient(circle at 32% 26%, var(--cream), var(--honey) 82%); }
-/* Semantic aliases for the three Beholden specialties. */
-.flavor-swatch--ritual,
-.flavor-swatch--coffee-ritual { background: radial-gradient(circle at 32% 26%, var(--honey), var(--action) 82%); }
-.flavor-swatch--signature { background: radial-gradient(circle at 32% 26%, var(--cream-3), var(--green) 82%); }
-.flavor-swatch--pairings { background: radial-gradient(circle at 32% 26%, var(--brand), var(--brand-dark) 82%); }
-.flavor-card:nth-child(1) .flavor-swatch { background: radial-gradient(circle at 32% 26%, var(--honey), var(--action) 82%); }
-.flavor-card:nth-child(2) .flavor-swatch { background: radial-gradient(circle at 32% 26%, var(--cream-3), var(--green) 82%); }
-.flavor-card:nth-child(3) .flavor-swatch { background: radial-gradient(circle at 32% 26%, var(--brand), var(--brand-dark) 82%); }
 
 /* ---------- menu ---------- */
 .menu { background: var(--cream-2); }
@@ -684,7 +636,6 @@ h2 em, .hero-title em { font-style: italic; color: var(--action); }
   .strip-item:not(:last-child)::after { display: none; }
   .about-grid, .visit-grid, .book-grid { grid-template-columns: 1fr; gap: var(--space-6); }
   .about-media { order: -1; }
-  .flavor-grid { grid-template-columns: 1fr 1fr; }
   .featured-grid { grid-template-columns: 1fr; }
   .footer-inner { grid-template-columns: 1fr; text-align: center; gap: 1.6rem; }
   .footer-brand { justify-content: center; }
@@ -702,7 +653,6 @@ h2 em, .hero-title em { font-style: italic; color: var(--action); }
   .brand-name { font-size: 1.18rem; }
   .brand-sub { font-size: .48rem; letter-spacing: .08em; }
   .strip-grid { grid-template-columns: 1fr; gap: 1.1rem; }
-  .flavor-grid { grid-template-columns: 1fr; }
   .field-row { grid-template-columns: 1fr; }
   .menu-cta { flex-direction: column; }
   .menu-cta .btn { white-space: normal; width: 100%; }
@@ -712,7 +662,7 @@ h2 em, .hero-title em { font-style: italic; color: var(--action); }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; transition: none; }
-  .btn:hover, .flavor-card:hover { transform: none; }
+  .btn:hover { transform: none; }
   .nav a:not(.nav-cta)::after { transition: none; }
   .site-header, .site-header::before, .header-inner, .brand-name, .brand-sub { transition: none; }
   .gallery-item img { transition: none; }
@@ -730,7 +680,19 @@ h2 em, .hero-title em { font-style: italic; color: var(--action); }
   border-radius: var(--radius); box-shadow: var(--shadow);
   padding: clamp(1.75rem, 1.2rem + 2.5vw, 3.25rem);
 }
-.menu-board { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 1rem + 3vw, 3.5rem) clamp(2.5rem, 1.5rem + 4vw, 5rem); }
+/* Multi-column pack (not CSS grid) so an odd category count never leaves a blank cell,
+   and short categories nest under taller ones instead of stretching empty row space. */
+.menu-board {
+  column-count: 2;
+  column-gap: clamp(2.5rem, 1.5rem + 4vw, 5rem);
+}
+.menu-cat {
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  margin: 0 0 clamp(2rem, 1rem + 3vw, 3.5rem);
+}
+.menu-cat:last-child { margin-bottom: 0; }
 .menu-cat-title {
   display: flex; align-items: baseline; gap: .6rem; flex-wrap: wrap;
   color: var(--brand-deep); font-size: 1.35rem;
@@ -818,7 +780,8 @@ h2 em, .hero-title em { font-style: italic; color: var(--action); }
 
 /* ---------- Starter-tier responsive ---------- */
 @media (max-width: 900px) {
-  .menu-board { grid-template-columns: 1fr; gap: var(--space-6); }
+  .menu-board { column-count: 1; }
+  .menu-cat { margin-bottom: var(--space-6); }
   .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .review-grid { grid-template-columns: 1fr; }
 }

@@ -112,7 +112,6 @@
 
     <nav class="nav" id="nav" aria-label="Primary">
       <a href="#about">About</a>
-      <a href="#flavors">Specialties</a>
       <a href="#menu">Menu</a>
       <a href="#gallery">Gallery</a>
       <a href="#reviews">Reviews</a>
@@ -173,48 +172,12 @@
   </div>
 </section>
 
-<!-- SIGNATURE SPECIALTIES -->
-<section class="section flavors section--dark" id="flavors">
-  <div class="container">
-    <div class="flavors-head reveal">
-      <span class="section-num" aria-hidden="true">02</span>
-      <div class="flavor-preview" aria-hidden="true">
-        <span class="flavor-dot flavor-dot--ritual"></span>
-        <span class="flavor-dot flavor-dot--signature"></span>
-        <span class="flavor-dot flavor-dot--pairings"></span>
-      </div>
-      <h2>One place, three <em>rhythms</em>.</h2>
-      <p class="flavors-lead">Choose an origin, explore a signature drink, and settle in with a thoughtful pastry pairing.</p>
-    </div>
-    <div class="flavor-grid">
-      <article class="flavor-card reveal">
-        <img src="/assets/coffee-flight.webp" alt="Concept imagery of a pour-over coffee flight served with a croissant and egg tart; not a real product photograph" loading="lazy">
-        <span class="flavor-swatch flavor-swatch--coffee-ritual" aria-hidden="true"></span>
-        <h3>Coffee Ritual</h3>
-        <p>Compare expressive origins through the pour-over bar, milk flight, and carefully calibrated coffee-to-milk ratios.</p>
-      </article>
-      <article class="flavor-card reveal">
-        <img src="/assets/davao-creamy-mocha.webp" alt="Concept imagery of a chilled layered Davao sikwate mocha in a ridged glass; not a real product photograph" loading="lazy">
-        <span class="flavor-swatch flavor-swatch--signature" aria-hidden="true"></span>
-        <h3>Signature Drinks</h3>
-        <p>From Davao Sikwate Mocha to Co-Ferment Dirty Latte, familiar café formats meet playful local flavor.</p>
-      </article>
-      <article class="flavor-card reveal">
-        <img src="/assets/bean-selection-ritual.webp" alt="Concept imagery of coffee beans and pour-over equipment prepared for a café pairing; not a real branch photo" loading="lazy">
-        <span class="flavor-swatch flavor-swatch--pairings" aria-hidden="true"></span>
-        <h3>Coffee &amp; Pastry Pairings</h3>
-        <p>Butter croissants, egg tarts, and café cakes give each coffee flight or signature latte an easy companion.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
 <!-- MENU — full priced board; confirm before any public commercial launch. -->
 <section class="section menu" id="menu">
   <div class="container">
     <div class="section-head reveal">
       <span class="tier-badge"><svg class="ic" aria-hidden="true"><use href="#i-sparkle"/></svg>Business-tier menu</span>
-      <span class="section-num" aria-hidden="true">03</span>
+      <span class="section-num" aria-hidden="true">02</span>
       <p class="eyebrow">The menu</p>
       <h2>Specialty coffee, fresh juice &amp; <em>café pairings</em>.</h2>
       <p class="section-lead">The current C.M. Recto café menu, organized for quick scanning and easy owner confirmation.</p>
@@ -241,6 +204,8 @@
 
     <div class="menu-panel reveal">
       <div class="menu-board">
+        <!-- Two-column board: categories ordered so tall + mid-size blocks pack
+             without empty grid cells or orphan short columns. Same items/categories. -->
         <div class="menu-cat">
           <h3 class="menu-cat-title">Coffee <span class="menu-cat-note">C.M. Recto</span></h3>
           <ul class="menu-list">
@@ -261,24 +226,6 @@
         </div>
 
         <div class="menu-cat">
-          <h3 class="menu-cat-title">Specialty Coffee</h3>
-          <ul class="menu-list">
-            <li class="menu-item"><div class="mi-head"><span class="mi-name">Cortado</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱170</span></div><p class="mi-desc">A bold milk drink between a 1:1 and 1:2 coffee-to-milk ratio.</p></li>
-            <li class="menu-item"><div class="mi-head"><span class="mi-name">Milk Flight</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱250</span></div><p class="mi-desc">Double-shot espresso split into chilled dairy, oat, and coconut milk.</p></li>
-            <li class="menu-item"><div class="mi-head"><span class="mi-name">Co-Ferment Dirty Latte</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱250</span></div><p class="mi-desc">Fruity coffee layered over chilled milk with condensed milk.</p></li>
-          </ul>
-        </div>
-
-        <div class="menu-cat">
-          <h3 class="menu-cat-title">Cheese Foam</h3>
-          <ul class="menu-list">
-            <li class="menu-item"><div class="mi-head"><span class="mi-name">Sea Salt Latte</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱210</span></div><p class="mi-desc">Espresso, steamed milk, condensed milk, and cheese foam.</p></li>
-            <li class="menu-item"><div class="mi-head"><span class="mi-name">Ube Matcha Latte</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱230</span></div><p class="mi-desc">Espresso, steamed milk, condensed milk, ceremonial matcha, ube, and cheese foam.</p></li>
-            <li class="menu-item"><div class="mi-head"><span class="mi-name">Cheesy Ube Latte</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱225</span></div><p class="mi-desc">Espresso, steamed milk, condensed milk, ube, and cheese foam.</p></li>
-          </ul>
-        </div>
-
-        <div class="menu-cat">
           <h3 class="menu-cat-title">Pour-Over</h3>
           <ul class="menu-list">
             <li class="menu-item"><div class="mi-head"><span class="mi-name">Regular Pour-Over</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱250 / ₱300</span></div><p class="mi-desc">Black or with milk; choose from the regular origins below.</p></li>
@@ -288,6 +235,15 @@
             <li class="menu-item"><div class="mi-head"><span class="mi-name">BARMM Lanao del Sur · “Local”</span><span class="mi-dots" aria-hidden="true"></span></div><p class="mi-desc">Jasmine, green apple, raspberry, and stone fruits.</p></li>
             <li class="menu-item"><div class="mi-head"><span class="mi-name">Flat White Project</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱250</span></div><p class="mi-desc">Mt. Apo Catimor with alternating co-ferment variants, or Colombia Quindio with a wine yeast-inoculated grape co-ferment honey process.</p></li>
             <li class="menu-item"><div class="mi-head"><span class="mi-name">“Blueberry Cheesecake” Rwanda</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱350</span></div><p class="mi-desc">Warm Natural Red Bourbon, best served as a flat white.</p></li>
+          </ul>
+        </div>
+
+        <div class="menu-cat">
+          <h3 class="menu-cat-title">Specialty Coffee</h3>
+          <ul class="menu-list">
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Cortado</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱170</span></div><p class="mi-desc">A bold milk drink between a 1:1 and 1:2 coffee-to-milk ratio.</p></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Milk Flight</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱250</span></div><p class="mi-desc">Double-shot espresso split into chilled dairy, oat, and coconut milk.</p></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Co-Ferment Dirty Latte</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱250</span></div><p class="mi-desc">Fruity coffee layered over chilled milk with condensed milk.</p></li>
           </ul>
         </div>
 
@@ -304,6 +260,15 @@
         </div>
 
         <div class="menu-cat">
+          <h3 class="menu-cat-title">Cheese Foam</h3>
+          <ul class="menu-list">
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Sea Salt Latte</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱210</span></div><p class="mi-desc">Espresso, steamed milk, condensed milk, and cheese foam.</p></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Ube Matcha Latte</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱230</span></div><p class="mi-desc">Espresso, steamed milk, condensed milk, ceremonial matcha, ube, and cheese foam.</p></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Cheesy Ube Latte</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱225</span></div><p class="mi-desc">Espresso, steamed milk, condensed milk, ube, and cheese foam.</p></li>
+          </ul>
+        </div>
+
+        <div class="menu-cat">
           <h3 class="menu-cat-title">Pastries &amp; Cakes</h3>
           <ul class="menu-list">
             <li class="menu-item"><div class="mi-head"><span class="mi-name">Butter Croissant</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱160</span></div></li>
@@ -316,19 +281,19 @@
         </div>
 
         <div class="menu-cat">
-          <h3 class="menu-cat-title">Hot Food</h3>
-          <ul class="menu-list">
-            <li class="menu-item"><div class="mi-head"><span class="mi-name">Lasagna</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱285</span></div><p class="mi-desc">Tender pasta layered with slow-simmered tomato-meat sauce.</p></li>
-            <li class="menu-item"><div class="mi-head"><span class="mi-name">Baked Mac</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱270</span></div><p class="mi-desc">Creamy baked macaroni with savory-sweet beef sauce.</p></li>
-          </ul>
-        </div>
-
-        <div class="menu-cat">
           <h3 class="menu-cat-title">Experimental Bar <span class="menu-cat-note">Rotating</span></h3>
           <ul class="menu-list">
             <li class="menu-item"><div class="mi-head"><span class="mi-name">Smoked Americano / AFAM</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱200</span></div></li>
             <li class="menu-item"><div class="mi-head"><span class="mi-name">Gender Reveal</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱180</span></div></li>
             <li class="menu-item"><div class="mi-head"><span class="mi-name">Shaken Lemon Raspberry Coffee Mocktail</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱220</span></div></li>
+          </ul>
+        </div>
+
+        <div class="menu-cat">
+          <h3 class="menu-cat-title">Hot Food</h3>
+          <ul class="menu-list">
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Lasagna</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱285</span></div><p class="mi-desc">Tender pasta layered with slow-simmered tomato-meat sauce.</p></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Baked Mac</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱270</span></div><p class="mi-desc">Creamy baked macaroni with savory-sweet beef sauce.</p></li>
           </ul>
         </div>
 
@@ -358,7 +323,7 @@
   <div class="container">
     <div class="gallery-head reveal">
       <span class="tier-badge"><svg class="ic" aria-hidden="true"><use href="#i-sparkle"/></svg>Business-tier gallery</span>
-      <span class="section-num" aria-hidden="true">04</span>
+      <span class="section-num" aria-hidden="true">03</span>
       <div class="gallery-preview" aria-hidden="true">
         <span class="gallery-preview-tile gallery-preview-tile--storefront"></span>
         <span class="gallery-preview-tile gallery-preview-tile--duo"></span>
@@ -385,7 +350,7 @@
   <div class="container">
     <div class="reviews-head reveal">
       <span class="tier-badge"><svg class="ic" aria-hidden="true"><use href="#i-sparkle"/></svg>Business-tier reviews</span>
-      <span class="section-num" aria-hidden="true">05</span>
+      <span class="section-num" aria-hidden="true">04</span>
       <span class="review-mark" aria-hidden="true">Placeholder set</span>
       <h2>Words to come, <em>honestly</em>.</h2>
       <p class="reviews-lead">These cards show the intended review layout while real customer feedback is collected.</p>
@@ -413,7 +378,7 @@
 <section class="section visit" id="visit">
   <div class="container">
     <div class="visit-head reveal">
-      <span class="section-num" aria-hidden="true">06</span>
+      <span class="section-num" aria-hidden="true">05</span>
       <span class="section-anchor" aria-hidden="true"><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg></span>
       <h2>Find your way to <em>Beholden</em>.</h2>
       <p class="visit-lead">Visit the C.M. Recto coffee bar in central Davao City for pour-overs, signature drinks, and pastry pairings.</p>
@@ -472,7 +437,7 @@
 <section class="section book section--brand" id="book">
   <div class="container book-grid">
     <div class="book-copy reveal">
-      <span class="section-num" aria-hidden="true">07</span>
+      <span class="section-num" aria-hidden="true">06</span>
       <p class="eyebrow">Café &amp; group inquiries</p>
       <h2>Make room for a <em>good gathering</em>.</h2>
       <p>Share your name, contact details, preferred date, party size, and what you have in mind for your café or group visit.</p>
@@ -532,7 +497,6 @@
     </div>
     <nav class="footer-nav" aria-label="Footer">
       <a href="#about">About</a>
-      <a href="#flavors">Specialties</a>
       <a href="#menu">Menu</a>
       <a href="#gallery">Gallery</a>
       <a href="#reviews">Reviews</a>

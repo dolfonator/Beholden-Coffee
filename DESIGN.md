@@ -4,7 +4,7 @@
 
 Beholden Coffee is a friendly and approachable local coffeehouse teaser-demo. It should feel warm, familiar, and easy to choose, not formal luxury. The visual language uses coffee ink, warm section bands, navy evening fields, honey highlights, and clear local-business calls to action.
 
-This is a Business-tier teaser-demo. It demonstrates the richer paid-site direction with a complete café menu, specialties, gallery, reviews, visit information, map fallback, and inquiry form. It is not the final signed-off production site and must not imply confirmed photography, prices, reviews, or business claims. The original mark is approved for this private demo only and still requires owner and trademark review before commercial launch.
+This is a Business-tier teaser-demo. It demonstrates the richer paid-site direction with a complete café menu, gallery, reviews, visit information, map fallback, and inquiry form. It is not the final signed-off production site and must not imply confirmed photography, prices, reviews, or business claims. The original mark is approved for this private demo only and still requires owner and trademark review before commercial launch.
 
 The system inherits the grounded-panel architecture from the DDM Business template. Panels are used where content needs physical emphasis: body copy, menu boards, cards, contact information, forms, map surfaces, and hero copy. Section bands remain open and use typography, spacing, and a quiet numeral to provide structure.
 
@@ -56,13 +56,9 @@ The inherited grounded-panel system is the main structural rule. Panels use the 
 
 The hero uses `assets/hero-pour-over-bar.webp` with a deliberate deep-navy scrim. Copy sits inside a semi-transparent navy grounded panel so the headline, supporting text, and actions do not float directly on the photo. Primary actions use navy with light text. Secondary actions use a visible light outline.
 
-### Specialties
-
-The specialties grid is designed for exactly three cards: Coffee Ritual, Signature Drinks, and Coffee & Pastry Pairings. It uses three balanced columns on wide screens, two columns at the existing medium breakpoint, and one column on narrow screens.
-
 ### Menu, gallery, reviews, visit, and form
 
-- The menu remains a tactile panel with clear category headings, dotted leaders, and action-brown prices.
+- The menu remains a tactile panel with clear category headings, dotted leaders, and action-brown prices. Categories pack in a balanced two-column board (multi-column flow) so short groups do not leave empty cells.
 - Gallery tiles use a fixed 4:3 crop in a compact 3-up, 2-up, and 1-up responsive grid.
 - Reviews remain in a deep-navy section with navy cards, warm light copy, honey stars, and explicit placeholder disclosure.
 - Visit keeps the contact card and map card as usable grounded panels. `.map-embed` contains the iframe, while `.map-fallback` provides the address and Google Maps link behind it if the embed is unavailable.
