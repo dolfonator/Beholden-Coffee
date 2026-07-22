@@ -9,7 +9,7 @@ template: DDM Business template
 
 ## Users
 
-The primary audience is a restaurant owner or prospect reviewing the Beholden Coffee concept and deciding whether to commission the Business-tier build. This page is a sales and sign-off artifact, not a live ordering or reservation experience for diners.
+The primary audience is a café owner or prospect reviewing the Beholden Coffee concept and deciding whether to commission the Business-tier build. This page is a sales and sign-off artifact, not a live ordering or reservation experience for guests.
 
 ## Product purpose
 
@@ -25,9 +25,10 @@ Success, in priority order:
 
 - `index.html` is noindex and carries the unofficial concept-demo framing.
 - The inquiry form is intercepted in `script.js`; no inquiry is submitted anywhere real.
-- Menu prices and review content are presentation material and require owner confirmation before any paid launch.
-- The visual asset boundary is exactly seven AI-generated concept images: pour-over bar, bean-selection ritual, coffee flight, Filipino sharing table, evening cocktails, Davao creamy mocha, and navy/amber texture. PNG/WebP pairs are alternate formats, not additional concepts.
-- No scraped or client photography is included.
+- Menu prices were transcribed from official Beholden Coffee social-menu screenshots supplied in July 2026 and still require owner confirmation before paid launch.
+- The live page represents one active location: C.M. Recto. It contains café offerings only; the explicitly limited-time protein board is omitted and Experimental Bar items are labeled rotating.
+- The visual boundary includes one original generated abstract logo mark plus seven AI-generated concept-image families. The Filipino sharing-table and evening-drinks assets remain unused legacy files.
+- No scraped photography is included. The logo reference was client-owned and used only as a palette/mood reference for a substantially different symbol.
 
 ## Brand personality
 

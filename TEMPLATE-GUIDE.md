@@ -25,13 +25,13 @@ The current site-specific content is already complete in `index.html`; this guid
 | Location, hours, contact, and CTAs | ✅, confirm with owner |
 | Inquiry form | Intercepted; no real submission |
 | Search indexing | Disabled with `noindex, nofollow` |
-| Concept imagery | Seven AI-generated images; no scraped/client photography |
+| Logo and concept imagery | Original generated logo plus seven AI-generated image families; no scraped photography |
 
 ## Content and asset boundary
 
-The seven AI-generated concept images are `hero-pour-over-bar`, `bean-selection-ritual`, `coffee-flight`, `filipino-sharing-table`, `evening-cocktails`, `davao-creamy-mocha`, and `navy-amber-texture`. Their PNG/WebP pairs are alternate delivery formats. Do not describe them as client photography, real product photography, or photographs of a real branch. Do not add scraped photography.
+The site includes an original abstract `beholden-mark` generated from an authorized client-owned reference, plus seven AI-generated concept-image families. The active page uses `hero-pour-over-bar`, `bean-selection-ritual`, `coffee-flight`, `davao-creamy-mocha`, and `navy-amber-texture`; `filipino-sharing-table` and `evening-cocktails` are retained but unused. PNG/WebP pairs are alternate delivery formats. Do not describe concept imagery as real product photography or photographs of a real branch, and do not add scraped photography.
 
-Before paid launch, confirm all menu prices, review sources, hours, addresses, phone/email details, maps, and social links with the owner. Replace concept imagery only with approved assets.
+Before paid launch, confirm the logo, official social-menu transcription, rotating menu availability, reviews, hours, C.M. Recto address, phone/email details, map, and social links with the owner. Replace concept imagery only with approved assets and obtain independent trademark advice if needed.
 
 ## Clone and rebrand
 
@@ -53,7 +53,7 @@ Vercel is a teaser-demo/portfolio target only while the account is on Hobby. Ver
 
 ## Handover checklist
 
-- [ ] Owner approves the Beholden Coffee copy, menu, prices, hours, addresses, contact details, and social links.
+- [ ] Owner approves the Beholden Coffee logo, copy, menu, prices, rotating items, hours, C.M. Recto address, contact details, and social links.
 - [ ] Demo reviews are replaced or explicitly approved as presentation placeholders.
 - [ ] Any replacement photography is client-provided or otherwise licensed with permission.
 - [ ] The noindex line is removed only for the approved paid build.

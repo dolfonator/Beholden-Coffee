@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Beholden Coffee — Specialty Coffee, Filipino Kitchen &amp; Cocktail Bar in Davao City</title>
-<meta name="description" content="Beholden Coffee in Davao City brings specialty coffee, an immersive pour-over ritual, a Filipino kitchen, and a cocktail bar to C.M. Recto and The Mangroves.">
+<title>Beholden Coffee — Specialty Coffee at C.M. Recto, Davao City</title>
+<meta name="description" content="Visit Beholden Coffee at C.M. Recto in Davao City for specialty coffee, expressive pour-overs, fresh juice, pastries, and café plates.">
 <meta name="theme-color" content="#E8A200">
 <link rel="canonical" href="https://beholden-coffee-demo.netlify.app/">
 <link rel="preload" as="image" href="/assets/hero-pour-over-bar.webp">
@@ -18,7 +18,7 @@
 <meta property="og:site_name" content="Beholden Coffee">
 <meta property="og:locale" content="en_PH">
 <meta property="og:title" content="Beholden Coffee — Specialty Coffee in Davao City">
-<meta property="og:description" content="An immersive pour-over experience, Filipino kitchen, and cocktail bar at Beholden Coffee in Davao City.">
+<meta property="og:description" content="Specialty coffee, expressive pour-overs, fresh juice, pastries, and café plates at C.M. Recto in Davao City.">
 <meta property="og:image" content="https://beholden-coffee-demo.netlify.app/assets/hero-pour-over-bar.png">
 <meta property="og:image:width" content="1672">
 <meta property="og:image:height" content="941">
@@ -26,10 +26,14 @@
 <meta property="og:url" content="https://beholden-coffee-demo.netlify.app/">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Beholden Coffee — Specialty Coffee in Davao City">
-<meta name="twitter:description" content="An immersive pour-over experience, Filipino kitchen, and cocktail bar at Beholden Coffee in Davao City.">
+<meta name="twitter:description" content="Specialty coffee, expressive pour-overs, fresh juice, pastries, and café plates at C.M. Recto in Davao City.">
 <meta name="twitter:image" content="https://beholden-coffee-demo.netlify.app/assets/hero-pour-over-bar.png">
 <meta name="twitter:image:alt" content="Concept imagery of a barista pouring coffee at a contemporary specialty coffee bar">
 
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 
 <!-- Fonts — two families only: Fraunces (display) + Hanken Grotesk (text/UI) -->
@@ -39,12 +43,11 @@
 
 <link rel="stylesheet" href="/styles.css">
 
-<!-- Structured data: the two confirmed Beholden Coffee branches. -->
+<!-- Structured data: the active C.M. Recto café. -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@graph": [
-    {
+  "@graph": [{
       "@type": "Restaurant",
       "@id": "https://beholden-coffee-demo.netlify.app/#cm-recto",
       "name": "Beholden Coffee — C.M. Recto",
@@ -56,7 +59,7 @@
         "https://www.facebook.com/bhldncoffee/",
         "https://www.instagram.com/bhldncoffee/"
       ],
-      "servesCuisine": ["Filipino", "Coffee"],
+      "servesCuisine": ["Coffee", "Cafe"],
       "priceRange": "₱₱",
       "address": {
         "@type": "PostalAddress",
@@ -72,21 +75,7 @@
           "closes": "24:00"
         }
       ]
-    },
-    {
-      "@type": "Restaurant",
-      "@id": "https://beholden-coffee-demo.netlify.app/#the-mangroves",
-      "name": "Beholden Coffee — The Mangroves",
-      "url": "https://beholden-coffee-demo.netlify.app/#visit",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Purok San Nicolas, Dumalag Coastal Rd, Matina Aplaya, Talomo, Davao City 8000",
-        "addressLocality": "Davao City",
-        "postalCode": "8000",
-        "addressCountry": "PH"
-      }
-    }
-  ]
+    }]
 }
 </script>
 </head>
@@ -98,7 +87,7 @@
   Unofficial Beholden Coffee concept demo — not an official page or live ordering site. Created for presentation only.
 </div>
 
-<!-- Inline line-icon set; the wordmark remains text-only. -->
+<!-- Inline line-icon set supporting the original logo lockup. -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
   <defs>
     <symbol id="i-flame" viewBox="0 0 24 24"><path d="M12 2.6c2 3.4 5 5 5 8.9a5 5 0 0 1-10 0c0-1.6.7-2.9 1.7-3.9.1 1.7.6 2.8 1.5 3.3.2-2.8 1-5.6 1.8-8.3Z"/></symbol>
@@ -117,7 +106,8 @@
 <header class="site-header" id="top">
   <div class="container header-inner">
     <a class="brand" href="#top" aria-label="Beholden Coffee home">
-      <span class="brand-name">Beholden Coffee<span class="brand-sub">Specialty Coffee · Kitchen · Bar</span></span>
+      <img class="brand-logo" src="/assets/beholden-mark.webp" alt="" width="47" height="42">
+      <span class="brand-name">Beholden Coffee<span class="brand-sub">Specialty Coffee · Pour-over · Pastries</span></span>
     </a>
 
     <nav class="nav" id="nav" aria-label="Primary">
@@ -144,7 +134,7 @@
   <div class="container hero-inner reveal">
     <p class="eyebrow">C.M. Recto · Davao City</p>
     <h1 class="hero-title">Be Happy. Be Healthy. <em>Beholden.</em></h1>
-    <p class="hero-sub">At C.M. Recto in Davao City, an immersive pour-over bar turns coffee into a sensory ritual: smell the grounds, choose your beans, and stay for the Filipino kitchen and cocktail bar.</p>
+    <p class="hero-sub">Specialty coffee, expressive pour-overs, fresh juice, and pastry pairings at C.M. Recto in Davao City.</p>
     <div class="hero-actions">
       <a class="btn btn-primary btn-lg" href="#menu">Explore the Menu</a>
       <a class="btn btn-ghost btn-lg" href="#visit">Visit &amp; Directions</a>
@@ -157,9 +147,9 @@
 <section class="strip" aria-label="Beholden Coffee highlights">
   <div class="container strip-grid">
     <div class="strip-item"><svg class="ic" aria-hidden="true"><use href="#i-flame"/></svg><div><strong>Immersive pour-over</strong><span>Smell the grounds and choose your beans</span></div></div>
-    <div class="strip-item"><svg class="ic" aria-hidden="true"><use href="#i-sparkle"/></svg><div><strong>Mount Apo beans</strong><span>Own beans plus curated imports</span></div></div>
-    <div class="strip-item"><svg class="ic" aria-hidden="true"><use href="#i-bag"/></svg><div><strong>Filipino kitchen</strong><span>From all-day mains to pizza and pasta</span></div></div>
-    <div class="strip-item"><svg class="ic" aria-hidden="true"><use href="#i-calendar"/></svg><div><strong>Cocktails after dark</strong><span>Classic and seasonal signatures</span></div></div>
+    <div class="strip-item"><svg class="ic" aria-hidden="true"><use href="#i-sparkle"/></svg><div><strong>Expressive beans</strong><span>Local lots and curated origins</span></div></div>
+    <div class="strip-item"><svg class="ic" aria-hidden="true"><use href="#i-bag"/></svg><div><strong>Fresh juice</strong><span>Cold-pressed citrus and pineapple</span></div></div>
+    <div class="strip-item"><svg class="ic" aria-hidden="true"><use href="#i-calendar"/></svg><div><strong>Pastry pairings</strong><span>Croissants, cakes, and café plates</span></div></div>
   </div>
 </section>
 
@@ -177,7 +167,7 @@
       <p>“Utang ng loob” — a debt of gratitude — is at the heart of the name. In Byrne Joshua Al-ag’s business story, being beholden means serving with honor and giving back to the community.</p>
       <p>Beholden Coffee brings its own Mount Apo beans together with curated imports, profiled by Eclipse Micro Roastery &amp; Coffee Lab. At the coffee bar, guests can smell the grounds, choose their beans, and take part in an interactive pour-over ritual.</p>
       <ul class="about-tags">
-        <li>Specialty coffee</li><li>Filipino kitchen</li><li>Cocktail bar</li><li>Davao City</li>
+        <li>Specialty coffee</li><li>Pour-over bar</li><li>Fresh juice</li><li>Davao City</li>
       </ul>
     </div>
   </div>
@@ -190,30 +180,30 @@
       <span class="section-num" aria-hidden="true">02</span>
       <div class="flavor-preview" aria-hidden="true">
         <span class="flavor-dot flavor-dot--ritual"></span>
-        <span class="flavor-dot flavor-dot--kitchen"></span>
-        <span class="flavor-dot flavor-dot--cocktails"></span>
+        <span class="flavor-dot flavor-dot--signature"></span>
+        <span class="flavor-dot flavor-dot--pairings"></span>
       </div>
       <h2>One place, three <em>rhythms</em>.</h2>
-      <p class="flavors-lead">Coffee ritual in the morning, Filipino comfort through the day, and cocktails when the lights get warm.</p>
+      <p class="flavors-lead">Choose an origin, explore a signature drink, and settle in with a thoughtful pastry pairing.</p>
     </div>
     <div class="flavor-grid">
       <article class="flavor-card reveal">
         <img src="/assets/coffee-flight.webp" alt="Concept imagery of a pour-over coffee flight served with a croissant and egg tart; not a real product photograph" loading="lazy">
         <span class="flavor-swatch flavor-swatch--coffee-ritual" aria-hidden="true"></span>
         <h3>Coffee Ritual</h3>
-        <p>The dedicated pour-over bar, the <strong>Beholden Coffee Flight</strong> with a croissant or egg tart, and Davao Creamy Mocha — a modern take on traditional sikwate.</p>
+        <p>Compare expressive origins through the pour-over bar, milk flight, and carefully calibrated coffee-to-milk ratios.</p>
       </article>
       <article class="flavor-card reveal">
-        <img src="/assets/filipino-sharing-table.webp" alt="Concept imagery of a Filipino sharing table with sisig, kare-kare, rice, grilled seafood, and bagoong; not a real product photograph" loading="lazy">
-        <span class="flavor-swatch flavor-swatch--filipino-kitchen" aria-hidden="true"></span>
-        <h3>Filipino Kitchen</h3>
-        <p>A broad Filipino mains menu with sisig, kare-kare, grilled seafood, and sinigang, alongside pizza and pasta for the whole table.</p>
+        <img src="/assets/davao-creamy-mocha.webp" alt="Concept imagery of a chilled layered Davao sikwate mocha in a ridged glass; not a real product photograph" loading="lazy">
+        <span class="flavor-swatch flavor-swatch--signature" aria-hidden="true"></span>
+        <h3>Signature Drinks</h3>
+        <p>From Davao Sikwate Mocha to Co-Ferment Dirty Latte, familiar café formats meet playful local flavor.</p>
       </article>
       <article class="flavor-card reveal">
-        <img src="/assets/evening-cocktails.webp" alt="Concept imagery of two cocktails on a dark café-bar: a whisky sour and an orange-to-red sunrise cocktail; not a real product photograph" loading="lazy">
-        <span class="flavor-swatch flavor-swatch--cocktails-after-dark" aria-hidden="true"></span>
-        <h3>Cocktails After Dark</h3>
-        <p>An evening cocktail program built around classics and seasonal signature cocktails, from coffeehouse day into bar-hour night.</p>
+        <img src="/assets/bean-selection-ritual.webp" alt="Concept imagery of coffee beans and pour-over equipment prepared for a café pairing; not a real branch photo" loading="lazy">
+        <span class="flavor-swatch flavor-swatch--pairings" aria-hidden="true"></span>
+        <h3>Coffee &amp; Pastry Pairings</h3>
+        <p>Butter croissants, egg tarts, and café cakes give each coffee flight or signature latte an easy companion.</p>
       </article>
     </div>
   </div>
@@ -226,25 +216,25 @@
       <span class="tier-badge"><svg class="ic" aria-hidden="true"><use href="#i-sparkle"/></svg>Business-tier menu</span>
       <span class="section-num" aria-hidden="true">03</span>
       <p class="eyebrow">The menu</p>
-      <h2>Coffee, kitchen, pizza, pasta &amp; <em>cocktails</em>.</h2>
-      <p class="section-lead">A full priced board spanning the Beholden Coffee identity, Filipino mains, and the evening bar.</p>
+      <h2>Specialty coffee, fresh juice &amp; <em>café pairings</em>.</h2>
+      <p class="section-lead">The current C.M. Recto café menu, organized for quick scanning and easy owner confirmation.</p>
     </div>
 
     <div class="featured-grid reveal">
       <article class="featured-card">
         <img src="/assets/davao-creamy-mocha.webp" alt="Concept imagery of a chilled layered Davao creamy mocha in a ridged glass; not a real product photograph" loading="lazy">
         <div class="featured-body">
-          <span class="badge">Coffee identity</span>
-          <h3>Davao Creamy Mocha</h3>
-          <p>A chilled modern take on traditional sikwate, served as part of the coffee-to-kitchen experience.</p>
+          <span class="badge">Local signature</span>
+          <h3>Davao Sikwate Mocha · ₱220</h3>
+          <p>Espresso, steamed milk, tablea, and muscovado in a distinctly Davao café drink.</p>
         </div>
       </article>
       <article class="featured-card">
-        <img src="/assets/filipino-sharing-table.webp" alt="Concept imagery of a Filipino sharing table with sisig, kare-kare, rice, grilled seafood, and bagoong; not a real product photograph" loading="lazy">
+        <img src="/assets/coffee-flight.webp" alt="Concept imagery of a coffee flight served beside a croissant and egg tart; not a real product photograph" loading="lazy">
         <div class="featured-body">
-          <span class="badge">For the table</span>
-          <h3>Filipino Kitchen</h3>
-          <p>Sisig, kare-kare, grilled seafood, sinigang, pizza, and pasta for a broad all-day menu.</p>
+          <span class="badge">Taste side by side</span>
+          <h3>Milk Flight · ₱250</h3>
+          <p>Double-shot espresso split across chilled dairy, oat, and coconut milk.</p>
         </div>
       </article>
     </div>
@@ -252,59 +242,104 @@
     <div class="menu-panel reveal">
       <div class="menu-board">
         <div class="menu-cat">
-          <h3 class="menu-cat-title">Coffee <span class="menu-cat-note">— Our Identity</span></h3>
+          <h3 class="menu-cat-title">Coffee <span class="menu-cat-note">C.M. Recto</span></h3>
           <ul class="menu-list">
-            <li class="menu-item"><div class="mi-head"><span class="mi-name">Americano (AFAM)</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">from ₱140</span></div></li>
-            <li class="menu-item"><div class="mi-head"><span class="mi-name">Latte</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">from ₱150</span></div></li>
-            <li class="menu-item"><div class="mi-head"><span class="mi-name">Spanish Latte</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">from ₱165</span></div></li>
-            <li class="menu-item"><div class="mi-head"><span class="mi-name">CarMac (Caramel Macchiato)</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">from ₱165</span></div></li>
-            <li class="menu-item"><div class="mi-head"><span class="mi-name">White Girl Mocha</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">from ₱160</span></div></li>
-            <li class="menu-item"><div class="mi-head"><span class="mi-name">Ube Latte / Choccy Mocha / Milo-Milo Latte</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">from ₱180</span></div></li>
-            <li class="menu-item"><div class="mi-head"><span class="mi-name">Matcha Latte</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">from ₱200</span></div></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Americano / AFAM</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱150</span></div><p class="mi-desc">Espresso poured over water.</p></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Latte</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱170</span></div><p class="mi-desc">Espresso with steamed milk.</p></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Flat White</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱170</span></div><p class="mi-desc">A stronger 1:3 coffee-to-milk ratio.</p></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Spanish Latte</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱180</span></div><p class="mi-desc">Espresso, steamed milk, and condensed milk.</p></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Honey Latte</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱210</span></div><p class="mi-desc">Espresso, steamed milk, and honey.</p></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">CarMac</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱185</span></div><p class="mi-desc">Espresso, steamed milk, caramel, and vanilla.</p></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Beholden XO</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱195</span></div><p class="mi-desc">Espresso, steamed milk, condensed milk, and muscovado.</p></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">White Girl Mocha</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱185</span></div><p class="mi-desc">Espresso, steamed milk, and white chocolate.</p></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Choccy Mocha</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱195</span></div><p class="mi-desc">Espresso, steamed milk, white chocolate, and dark chocolate.</p></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Ube Latte</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱195</span></div><p class="mi-desc">Espresso, steamed milk, condensed milk, and ube.</p></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Matcha Latte</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱200</span></div><p class="mi-desc">Espresso, steamed milk, condensed milk, and ceremonial matcha.</p></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Milo-Milo Latte</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱195</span></div><p class="mi-desc">Espresso, Milo, steamed milk, and white chocolate.</p></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Davao Sikwate Mocha</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱220</span></div><p class="mi-desc">Espresso, steamed milk, tablea, and muscovado.</p></li>
           </ul>
         </div>
 
         <div class="menu-cat">
-          <h3 class="menu-cat-title">Frappe &amp; Shakes</h3>
+          <h3 class="menu-cat-title">Specialty Coffee</h3>
           <ul class="menu-list">
-            <li class="menu-item"><div class="mi-head"><span class="mi-name">Choccy / Strawberry / Choco-Banana Frappe</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">from ₱185</span></div></li>
-            <li class="menu-item"><div class="mi-head"><span class="mi-name">Mango / Banana Shake</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">from ₱160</span></div></li>
-            <li class="menu-item"><div class="mi-head"><span class="mi-name">Houseblend Lemon Iced Tea</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱150</span></div></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Cortado</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱170</span></div><p class="mi-desc">A bold milk drink between a 1:1 and 1:2 coffee-to-milk ratio.</p></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Milk Flight</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱250</span></div><p class="mi-desc">Double-shot espresso split into chilled dairy, oat, and coconut milk.</p></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Co-Ferment Dirty Latte</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱250</span></div><p class="mi-desc">Fruity coffee layered over chilled milk with condensed milk.</p></li>
           </ul>
         </div>
 
         <div class="menu-cat">
-          <h3 class="menu-cat-title">Cocktails</h3>
+          <h3 class="menu-cat-title">Cheese Foam</h3>
           <ul class="menu-list">
-            <li class="menu-item"><div class="mi-head"><span class="mi-name">Classic cocktails — Vodka/Tequila Sunrise, Magic Mojito, Whisky Sour, Margaritas</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱250–270</span></div></li>
-            <li class="menu-item"><div class="mi-head"><span class="mi-name">Signature/seasonal — Bloody White Russian, Vampire Sweet Blood, Haunted Blue Ocean, Goblin</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱390–420</span></div></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Sea Salt Latte</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱210</span></div><p class="mi-desc">Espresso, steamed milk, condensed milk, and cheese foam.</p></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Ube Matcha Latte</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱230</span></div><p class="mi-desc">Espresso, steamed milk, condensed milk, ceremonial matcha, ube, and cheese foam.</p></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Cheesy Ube Latte</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱225</span></div><p class="mi-desc">Espresso, steamed milk, condensed milk, ube, and cheese foam.</p></li>
           </ul>
         </div>
 
         <div class="menu-cat">
-          <h3 class="menu-cat-title">Pizza &amp; Pasta</h3>
+          <h3 class="menu-cat-title">Pour-Over</h3>
           <ul class="menu-list">
-            <li class="menu-item"><div class="mi-head"><span class="mi-name">Pizzas — 4 Cheese, All Mighty Meaty, Pepperoni Overload, Aloha Supreme, Cheesy Garlic Onion</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱365</span></div></li>
-            <li class="menu-item"><div class="mi-head"><span class="mi-name">Pasta &amp; Salad — Aglio y Olio, Chicken Alfredo, Caesar/Waldorf Salad</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱250–275</span></div></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Regular Pour-Over</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱250 / ₱300</span></div><p class="mi-desc">Black or with milk; choose from the regular origins below.</p></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Guatemala Coban · “Nutty”</span><span class="mi-dots" aria-hidden="true"></span></div><p class="mi-desc">Red apple, toffee, tangerine, honey, and black tea.</p></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">China Yunnan Province · “Floral”</span><span class="mi-dots" aria-hidden="true"></span></div><p class="mi-desc">Dried bergamot, spiced pineapple, rosemary, cardamom, and macadamia.</p></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Colombia Tolima · “Fruity”</span><span class="mi-dots" aria-hidden="true"></span></div><p class="mi-desc">Citrus, berry, plum, hazelnut, and sweetness.</p></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">BARMM Lanao del Sur · “Local”</span><span class="mi-dots" aria-hidden="true"></span></div><p class="mi-desc">Jasmine, green apple, raspberry, and stone fruits.</p></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Flat White Project</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱250</span></div><p class="mi-desc">Mt. Apo Catimor with alternating co-ferment variants, or Colombia Quindio with a wine yeast-inoculated grape co-ferment honey process.</p></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">“Blueberry Cheesecake” Rwanda</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱350</span></div><p class="mi-desc">Warm Natural Red Bourbon, best served as a flat white.</p></li>
           </ul>
         </div>
 
         <div class="menu-cat">
-          <h3 class="menu-cat-title">Filipino Mains</h3>
+          <h3 class="menu-cat-title">Fresh Juice</h3>
           <ul class="menu-list">
-            <li class="menu-item"><div class="mi-head"><span class="mi-name">Sisig/Dinakdakan/Lechon Kawali</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱350–360</span></div></li>
-            <li class="menu-item"><div class="mi-head"><span class="mi-name">Kare-kare/Kaldereta/Brisket</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱400–550</span></div></li>
-            <li class="menu-item"><div class="mi-head"><span class="mi-name">Grilled Panga/Tuna Belly/Fried Pompano</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱600–650</span></div></li>
-            <li class="menu-item"><div class="mi-head"><span class="mi-name">Crispy Pata/Crispy Pata Kare-kare</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱900–950</span></div></li>
-            <li class="menu-item"><div class="mi-head"><span class="mi-name">Sinigang/Tinola soups</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱400–550</span></div></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Fresh Lemonade</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱180</span></div></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Lemonade AFAM</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱180</span></div><p class="mi-desc">Espresso, cold-pressed lemon, simple syrup, and water.</p></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Fresh Orange</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱190</span></div></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Orange AFAM</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱190</span></div><p class="mi-desc">Espresso, cold-pressed orange, simple syrup, and water.</p></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Fresh Pineapple</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱200</span></div></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Pineapple AFAM</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱200</span></div><p class="mi-desc">Espresso, cold-pressed pineapple, simple syrup, and water.</p></li>
           </ul>
         </div>
 
         <div class="menu-cat">
-          <h3 class="menu-cat-title">Dessert &amp; Rice</h3>
+          <h3 class="menu-cat-title">Pastries &amp; Cakes</h3>
           <ul class="menu-list">
-            <li class="menu-item"><div class="mi-head"><span class="mi-name">BHLDN Halo-halo</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱250</span></div></li>
-            <li class="menu-item"><div class="mi-head"><span class="mi-name">Plain/Fried/Garlic/Java Rice</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">from ₱25</span></div></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Butter Croissant</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱160</span></div></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Egg Tart</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱150</span></div></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Biscoff Croissant</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱235</span></div></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Tiramisu Croissant</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱270</span></div></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Cheesecake</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱250</span></div></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Crème Brûlée Cake</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱255</span></div></li>
+          </ul>
+        </div>
+
+        <div class="menu-cat">
+          <h3 class="menu-cat-title">Hot Food</h3>
+          <ul class="menu-list">
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Lasagna</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱285</span></div><p class="mi-desc">Tender pasta layered with slow-simmered tomato-meat sauce.</p></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Baked Mac</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱270</span></div><p class="mi-desc">Creamy baked macaroni with savory-sweet beef sauce.</p></li>
+          </ul>
+        </div>
+
+        <div class="menu-cat">
+          <h3 class="menu-cat-title">Experimental Bar <span class="menu-cat-note">Rotating</span></h3>
+          <ul class="menu-list">
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Smoked Americano / AFAM</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱200</span></div></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Gender Reveal</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱180</span></div></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Shaken Lemon Raspberry Coffee Mocktail</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱220</span></div></li>
+          </ul>
+        </div>
+
+        <div class="menu-cat">
+          <h3 class="menu-cat-title">Add-ons</h3>
+          <ul class="menu-list">
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Substitute oat milk</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱40</span></div></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Substitute coconut milk</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱40</span></div></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Honey</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱60</span></div></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Extra shot espresso</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱60</span></div></li>
+            <li class="menu-item"><div class="mi-head"><span class="mi-name">Cheesy sea-salt foam</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱50</span></div></li>
           </ul>
         </div>
       </div>
@@ -312,9 +347,9 @@
 
     <div class="menu-cta reveal">
       <a class="btn btn-primary btn-lg" href="#visit">Visit C.M. Recto</a>
-      <a class="link-quiet" href="#book">Plan a dining or group inquiry</a>
+      <a class="link-quiet" href="#book">Plan a café or group inquiry</a>
     </div>
-    <p class="menu-disclaimer reveal">Menu and prices sourced from the public foodpanda listing, July 2026; subject to owner confirmation.</p>
+    <p class="menu-disclaimer reveal">Menu and prices transcribed from Beholden Coffee’s official Instagram and Facebook menu posts supplied in July 2026; rotating items and availability remain subject to owner confirmation.</p>
   </div>
 </section>
 
@@ -329,16 +364,14 @@
         <span class="gallery-preview-tile gallery-preview-tile--duo"></span>
         <span class="gallery-preview-tile gallery-preview-tile--solo"></span>
       </div>
-      <h2>Crafted moments, from <em>day to night</em>.</h2>
-      <p class="gallery-lead">A visual introduction to the coffee ritual, shared table, and evening bar. All imagery below is concept art.</p>
+      <h2>Crafted moments, from <em>bean to cup</em>.</h2>
+      <p class="gallery-lead">A compact visual introduction to the coffee ritual, signature drinks, and café pairings. All imagery below is concept art.</p>
     </div>
     <div class="gallery-grid reveal">
       <figure class="gallery-item"><img src="/assets/hero-pour-over-bar.webp" alt="Concept imagery of an anonymous barista pouring coffee at a contemporary specialty coffee bar; not a photograph of a real Beholden branch" width="1672" height="941" loading="lazy"></figure>
       <figure class="gallery-item"><img src="/assets/bean-selection-ritual.webp" alt="Concept imagery of anonymous hands smelling roasted coffee beans from open jars beside pour-over equipment; not a real branch photo" width="1536" height="1024" loading="lazy"></figure>
       <figure class="gallery-item"><img src="/assets/coffee-flight.webp" alt="Concept imagery of a pour-over coffee flight served with a croissant and egg tart; not a real product photograph" width="1448" height="1086" loading="lazy"></figure>
       <figure class="gallery-item"><img src="/assets/davao-creamy-mocha.webp" alt="Concept imagery of a chilled layered Davao creamy mocha in a ridged glass; not a real product photograph" width="1122" height="1402" loading="lazy"></figure>
-      <figure class="gallery-item"><img src="/assets/filipino-sharing-table.webp" alt="Concept imagery of a Filipino sharing table with sisig, kare-kare, rice, grilled seafood, and bagoong; not a real product photograph" width="1536" height="1024" loading="lazy"></figure>
-      <figure class="gallery-item"><img src="/assets/evening-cocktails.webp" alt="Concept imagery of two cocktails on a dark café-bar: a whisky sour and an orange-to-red sunrise cocktail; not a real product photograph" width="1536" height="1024" loading="lazy"></figure>
       <figure class="gallery-item"><img src="/assets/navy-amber-texture.webp" alt="Abstract concept texture in deep navy, honey amber, and cream suggesting coffee aroma paths and honeycomb lines; not a photograph" width="1672" height="941" loading="lazy"></figure>
       <a class="gallery-item gallery-cta" href="https://www.instagram.com/bhldncoffee/" target="_blank" rel="noopener">
         <span class="gallery-cta-inner"><svg class="ic" aria-hidden="true"><use href="#i-instagram"/></svg> Follow @bhldncoffee on Instagram</span>
@@ -376,19 +409,19 @@
   </div>
 </section>
 
-<!-- VISIT — C.M. Recto is primary; The Mangroves delivery hours are unconfirmed for dine-in. -->
+<!-- VISIT — the active C.M. Recto café. -->
 <section class="section visit" id="visit">
   <div class="container">
     <div class="visit-head reveal">
       <span class="section-num" aria-hidden="true">06</span>
       <span class="section-anchor" aria-hidden="true"><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg></span>
       <h2>Find your way to <em>Beholden</em>.</h2>
-      <p class="visit-lead">Start with the C.M. Recto coffee bar in central Davao City, or find the pioneer branch at The Mangroves in Matina Aplaya.</p>
+      <p class="visit-lead">Visit the C.M. Recto coffee bar in central Davao City for pour-overs, signature drinks, and pastry pairings.</p>
     </div>
 
     <div class="visit-grid">
       <div class="visit-card visit-info reveal">
-        <p class="eyebrow">Primary / featured branch</p>
+        <p class="eyebrow">Beholden Coffee · Davao City</p>
         <h3 id="cm-recto">C.M. Recto</h3>
         <p>COPE Development Bldg, C.M. Recto Ave, Davao City</p>
         <p class="muted">Near Marco Polo Davao &amp; Upside Down Museum, behind 7-Eleven.</p>
@@ -417,20 +450,6 @@
         </div>
       </div>
 
-      <div class="visit-card visit-info reveal">
-        <p class="eyebrow">Secondary branch</p>
-        <h3 id="the-mangroves">The Mangroves</h3>
-        <p>Purok San Nicolas, Dumalag Coastal Rd, Matina Aplaya, Talomo, Davao City 8000</p>
-        <p class="muted"><strong>foodpanda delivery hours — dine-in hours to be confirmed with the owner.</strong></p>
-        <table class="hours" aria-label="The Mangroves foodpanda delivery hours">
-          <tbody>
-            <tr><th>Mon–Thu</th><td>12:00 PM – 8:30 PM</td></tr>
-            <tr><th>Fri–Sun</th><td>11:00 AM – 9:30 PM</td></tr>
-          </tbody>
-        </table>
-        <p class="menu-disclaimer">These times describe foodpanda delivery availability only; ask the owner to confirm dine-in hours.</p>
-      </div>
-
       <div class="visit-card visit-map reveal">
         <div class="map-embed">
           <div class="map-fallback">
@@ -449,21 +468,21 @@
   </div>
 </section>
 
-<!-- BOOK / DINING & GROUP INQUIRY -->
+<!-- BOOK / CAFÉ & GROUP INQUIRY -->
 <section class="section book section--brand" id="book">
   <div class="container book-grid">
     <div class="book-copy reveal">
       <span class="section-num" aria-hidden="true">07</span>
-      <p class="eyebrow">Dining &amp; group inquiries</p>
+      <p class="eyebrow">Café &amp; group inquiries</p>
       <h2>Make room for a <em>good gathering</em>.</h2>
-      <p>Share your name, contact details, preferred date, party size, and what you have in mind for your dining or group inquiry.</p>
+      <p>Share your name, contact details, preferred date, party size, and what you have in mind for your café or group visit.</p>
       <ul class="about-tags">
-        <li>Dining inquiries</li><li>Group bookings</li><li>Event questions</li>
+        <li>Café visits</li><li>Group bookings</li><li>Event questions</li>
       </ul>
     </div>
 
     <form name="inquiry" method="POST" action="https://formspree.io/f/YOUR_FORM_ID" class="book-form reveal">
-      <input type="hidden" name="_subject" value="New dining or group inquiry from beholden-coffee-demo.netlify.app">
+      <input type="hidden" name="_subject" value="New café or group inquiry from beholden-coffee-demo.netlify.app">
       <input type="hidden" name="_next" value="https://beholden-coffee-demo.netlify.app/thanks.html">
       <p class="hp"><label>Don't fill this out: <input name="_gotcha" tabindex="-1" autocomplete="off"></label></p>
 
@@ -492,8 +511,8 @@
         </div>
       </div>
       <div class="field">
-        <label for="message">Dining or group inquiry <span class="muted">(optional)</span></label>
-        <textarea id="message" name="message" rows="4" placeholder="Tell us about your dining plan or group request…"></textarea>
+        <label for="message">Café or group inquiry <span class="muted">(optional)</span></label>
+        <textarea id="message" name="message" rows="4" placeholder="Tell us about your café visit or group request…"></textarea>
       </div>
       <button type="submit" class="btn btn-primary btn-lg btn-block">Send inquiry</button>
       <p class="form-note">Concept form for demo purposes: submissions are disabled and are not sent anywhere real.</p>
@@ -508,7 +527,7 @@
     <div class="footer-brand">
       <div>
         <strong>Beholden Coffee</strong>
-        <span>Specialty coffee · Filipino kitchen · cocktail bar</span>
+        <span>Specialty coffee · pour-over · fresh juice · pastries</span>
       </div>
     </div>
     <nav class="footer-nav" aria-label="Footer">
@@ -530,11 +549,10 @@
   </div>
   <div class="container footer-legal">
     <p><strong>C.M. Recto:</strong> COPE Development Bldg, C.M. Recto Ave, Davao City · <a href="tel:+639176278193">0917 627 8193</a> · <a href="mailto:beholdencoffee@gmail.com">beholdencoffee@gmail.com</a></p>
-    <p><strong>The Mangroves:</strong> Purok San Nicolas, Dumalag Coastal Rd, Matina Aplaya, Talomo, Davao City 8000</p>
-    <p class="muted"><span>© <span id="year">2026</span> Beholden Coffee.</span> Unofficial concept demo. AI-generated concept imagery is used for this presentation. Menu and prices sourced from the public foodpanda listing, July 2026; subject to owner confirmation.</p>
+    <p class="muted"><span>© <span id="year">2026</span> Beholden Coffee.</span> Unofficial concept demo. AI-generated concept imagery is used for this presentation. Menu and prices were transcribed from official Beholden Coffee social posts supplied in July 2026; subject to owner confirmation.</p>
   </div>
 </footer>
 
-<script src="/script.js" defer></script>
+<script src="/script.js?v=20260722" defer></script>
 </body>
 </html>

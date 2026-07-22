@@ -1,7 +1,7 @@
 {
   "name": "Beholden Coffee",
   "short_name": "Beholden Coffee",
-  "description": "A Business-tier concept demo for Beholden Coffee's specialty coffee, Filipino kitchen, and cocktail bar experience in Davao City.",
+  "description": "A Business-tier concept demo for Beholden Coffee's specialty coffee, pour-over, fresh juice, pastry, and café experience at C.M. Recto in Davao City.",
   "id": "https://beholden-coffee-demo.netlify.app/",
   "start_url": "/",
   "display": "standalone",

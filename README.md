@@ -1,6 +1,6 @@
 # Beholden Coffee — Business-tier teaser demo
 
-Beholden Coffee is a content-complete, one-page Business-tier teaser demo for a specialty coffee, Filipino kitchen, and cocktail bar concept in Davao City. It is built from the DDM Business template with plain HTML, CSS, and JavaScript: no framework, no dependencies, and no build step.
+Beholden Coffee is a content-complete, one-page Business-tier teaser demo for the C.M. Recto specialty café in Davao City. It is built from the DDM Business template with plain HTML, CSS, and JavaScript: no framework, no dependencies, and no build step.
 
 This is a private presentation artifact, not an official Beholden Coffee website. The site is noindex, the inquiry form is intercepted by `script.js`, and nothing is submitted to a real backend. The neutral placeholder origin for site metadata is `https://beholden-coffee-demo.netlify.app`.
 
@@ -17,15 +17,17 @@ Beholden Coffee/
 ├── site.webmanifest    ← Beholden Coffee install metadata and existing icons
 ├── robots.txt          ← crawl rules and placeholder sitemap URL
 ├── sitemap.xml         ← placeholder-origin sitemap
-├── favicon.ico         ← site favicon
+├── favicon.ico         ← original abstract bee-bean favicon
 ├── TEMPLATE-GUIDE.md   ← clone, handoff, and paid-conversion instructions
 ├── PRODUCT.md          ← product intent, boundaries, and hosting policy
-└── assets/             ← seven AI-generated concept-image families plus icons
+└── assets/             ← original logo, seven concept-image families, and icons
 ```
 
 ## Asset boundary
 
-The site uses seven AI-generated concept images: `hero-pour-over-bar`, `bean-selection-ritual`, `coffee-flight`, `filipino-sharing-table`, `evening-cocktails`, `davao-creamy-mocha`, and `navy-amber-texture`. PNG and WebP files are delivery formats for those concepts; they do not represent fourteen separate image concepts. No scraped or client photography is included.
+The live site uses five of seven AI-generated concept-image families: `hero-pour-over-bar`, `bean-selection-ritual`, `coffee-flight`, `davao-creamy-mocha`, and `navy-amber-texture`. The `filipino-sharing-table` and `evening-cocktails` families remain as unused legacy assets. PNG and WebP files are alternate delivery formats, not separate concepts.
+
+The header and icon set use `beholden-mark`: an original abstract bee-bean symbol generated from a client-owned reference without retaining its mascot face, cup, antennae, limbs, body silhouette, or character pose. This private-demo distinction is not a substitute for owner approval or trademark clearance.
 
 ## Deploy targets
 
@@ -46,7 +48,7 @@ Use a local server instead of double-clicking `index.html`, so root-absolute pat
 
 ## Before paid conversion
 
-- Confirm Beholden Coffee's menu, prices, hours, addresses, phone, email, and social links with the owner.
+- Confirm Beholden Coffee's menu, prices, rotating items, hours, C.M. Recto address, phone, email, social links, and logo with the owner.
 - Treat all menu prices and demo reviews as presentation content until the owner approves the final copy.
 - Obtain permission for any future client photography; replace concept imagery only with approved assets.
 - Keep the noindex and intercepted-form hardening active until owner sign-off.

@@ -308,11 +308,11 @@ h2 em, .hero-title em { font-style: italic; color: var(--action); }
 .site-header.scrolled .header-inner { height: 60px; }
 
 /* brand lockup */
-.brand { display: flex; align-items: center; gap: .75rem; color: var(--white); }
+.brand { display: flex; align-items: center; gap: .7rem; color: var(--white); min-width: 0; }
 .brand:hover { text-decoration: none; }
-.brand-logo { border-radius: 9px; box-shadow: 0 2px 10px var(--navy-shadow-soft); }
+.brand-logo { width: 47px; height: 42px; object-fit: contain; flex: 0 0 auto; filter: drop-shadow(0 2px 5px var(--navy-shadow-soft)); }
 .brand-name { font-family: var(--font-display); font-weight: 600; font-size: 1.35rem; line-height: 1; letter-spacing: -.02em; display: flex; flex-direction: column; gap: .2rem; transition: color .3s ease; }
-.brand-sub { font-family: var(--font-head); font-size: .6rem; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--honey); transition: color .3s ease; }
+.brand-sub { font-family: var(--font-head); font-size: .57rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; color: var(--honey); transition: color .3s ease; white-space: nowrap; }
 .site-header.scrolled .brand { color: var(--ink); }
 .site-header.scrolled .brand-sub { color: var(--action); }
 /* shadow only while the lockup sits over the hero photo (transparent state) */
@@ -488,6 +488,9 @@ h2 em, .hero-title em { font-style: italic; color: var(--action); }
 .flavor-dot--yangnyeom { background: radial-gradient(circle at 32% 28%, var(--green), var(--brand-deep) 82%); }
 .flavor-dot--buffalo   { background: radial-gradient(circle at 32% 28%, var(--brand), var(--brand-dark) 82%); }
 .flavor-dot--cheese    { background: radial-gradient(circle at 32% 28%, var(--cream), var(--honey) 82%); }
+.flavor-dot--ritual    { background: radial-gradient(circle at 32% 28%, var(--honey), var(--action) 82%); }
+.flavor-dot--signature { background: radial-gradient(circle at 32% 28%, var(--cream-3), var(--green) 82%); }
+.flavor-dot--pairings  { background: radial-gradient(circle at 32% 28%, var(--brand), var(--brand-dark) 82%); }
 
 .flavor-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: var(--gap); }
 .flavor-card {
@@ -515,10 +518,8 @@ h2 em, .hero-title em { font-style: italic; color: var(--action); }
 /* Semantic aliases for the three Beholden specialties. */
 .flavor-swatch--ritual,
 .flavor-swatch--coffee-ritual { background: radial-gradient(circle at 32% 26%, var(--honey), var(--action) 82%); }
-.flavor-swatch--kitchen,
-.flavor-swatch--filipino-kitchen { background: radial-gradient(circle at 32% 26%, var(--cream-3), var(--green) 82%); }
-.flavor-swatch--cocktails,
-.flavor-swatch--cocktails-after-dark { background: radial-gradient(circle at 32% 26%, var(--brand), var(--brand-dark) 82%); }
+.flavor-swatch--signature { background: radial-gradient(circle at 32% 26%, var(--cream-3), var(--green) 82%); }
+.flavor-swatch--pairings { background: radial-gradient(circle at 32% 26%, var(--brand), var(--brand-dark) 82%); }
 .flavor-card:nth-child(1) .flavor-swatch { background: radial-gradient(circle at 32% 26%, var(--honey), var(--action) 82%); }
 .flavor-card:nth-child(2) .flavor-swatch { background: radial-gradient(circle at 32% 26%, var(--cream-3), var(--green) 82%); }
 .flavor-card:nth-child(3) .flavor-swatch { background: radial-gradient(circle at 32% 26%, var(--brand), var(--brand-dark) 82%); }
@@ -696,6 +697,10 @@ h2 em, .hero-title em { font-style: italic; color: var(--action); }
   .menu-cta .btn { white-space: normal; }
 }
 @media (max-width: 520px) {
+  .brand { gap: .55rem; }
+  .brand-logo { width: 40px; height: 36px; }
+  .brand-name { font-size: 1.18rem; }
+  .brand-sub { font-size: .48rem; letter-spacing: .08em; }
   .strip-grid { grid-template-columns: 1fr; gap: 1.1rem; }
   .flavor-grid { grid-template-columns: 1fr; }
   .field-row { grid-template-columns: 1fr; }
@@ -769,9 +774,9 @@ h2 em, .hero-title em { font-style: italic; color: var(--action); }
 .gallery-preview-tile--storefront { background-image: url("/assets/bean-selection-ritual.webp"); }
 .gallery-preview-tile--duo { background-image: url("/assets/coffee-flight.webp"); }
 .gallery-preview-tile--solo { background-image: url("/assets/davao-creamy-mocha.webp"); }
-.gallery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--gap); }
-.gallery-item { position: relative; margin: 0; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
-.gallery-item img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; transition: transform .5s ease; }
+.gallery-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--gap); }
+.gallery-item { position: relative; margin: 0; aspect-ratio: 4 / 3; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .5s ease; }
 .gallery-item:hover img { transform: scale(1.05); }
 .gallery-cta {
   aspect-ratio: 4 / 3; display: flex; align-items: center; justify-content: center; text-align: center; padding: 1.5rem;
@@ -814,6 +819,7 @@ h2 em, .hero-title em { font-style: italic; color: var(--action); }
 /* ---------- Starter-tier responsive ---------- */
 @media (max-width: 900px) {
   .menu-board { grid-template-columns: 1fr; gap: var(--space-6); }
+  .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .review-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 520px) {

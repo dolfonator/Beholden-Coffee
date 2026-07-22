@@ -4,7 +4,7 @@
 
 Beholden Coffee is a friendly and approachable local coffeehouse teaser-demo. It should feel warm, familiar, and easy to choose, not formal luxury. The visual language uses coffee ink, warm section bands, navy evening fields, honey highlights, and clear local-business calls to action.
 
-This is a Business-tier teaser-demo. It demonstrates the richer paid-site direction with a complete menu, specialties, gallery, reviews, visit information, map fallback, and inquiry form. It is not the final signed-off production site and must not imply confirmed brand assets, photography, prices, reviews, or business claims.
+This is a Business-tier teaser-demo. It demonstrates the richer paid-site direction with a complete café menu, specialties, gallery, reviews, visit information, map fallback, and inquiry form. It is not the final signed-off production site and must not imply confirmed photography, prices, reviews, or business claims. The original mark is approved for this private demo only and still requires owner and trademark review before commercial launch.
 
 The system inherits the grounded-panel architecture from the DDM Business template. Panels are used where content needs physical emphasis: body copy, menu boards, cards, contact information, forms, map surfaces, and hero copy. Section bands remain open and use typography, spacing, and a quiet numeral to provide structure.
 
@@ -12,7 +12,7 @@ The system inherits the grounded-panel architecture from the DDM Business templa
 
 | Token | Color | Role |
 | --- | --- | --- |
-| Brand amber | `#E8A200` | **PROVISIONAL.** Honey amber for identity and restrained accent use only. It is inferred from the brand's bee and honey motif, not sampled from an official logo. Correct it when real brand files arrive. |
+| Brand amber | `#E8A200` | Honey amber used by the original demo mark and restrained identity accents; confirm the production palette with the owner. |
 | Action brown | `#8A5B00` | WCAG-AA-safe text color for links, prices, quiet actions, and text on light or white backgrounds. |
 | Brand navy | `#1D2F3A` | Primary navy field, dark panel surface, and primary button background. |
 | Deep navy | `#13232D` | Dark section fields, footer, review room, and deep scrim tone. |
@@ -27,7 +27,7 @@ The system inherits the grounded-panel architecture from the DDM Business templa
 
 ### Color rules
 
-- The provisional amber identifies Beholden. Do not use `#E8A200` for small or body text on white or near-white backgrounds.
+- Brand amber identifies Beholden in this demo. Do not use `#E8A200` for small or body text on white or near-white backgrounds.
 - Use `#8A5B00` for action, link, and price text on light surfaces.
 - Use white or warm cream copy on the navy tones. Use honey highlight text only on navy backgrounds.
 - Use coffee ink for primary light-surface copy and soft ink for secondary copy.
@@ -44,7 +44,7 @@ Fraunces carries the welcoming display voice. Hanken Grotesk keeps navigation, l
 
 ## 4. Logo and wordmark
 
-Only a text wordmark is used for Beholden Coffee. Do not fabricate or introduce a logo image, badge, bee mark, or other invented brand asset. The wordmark uses Fraunces for the name and Hanken Grotesk for any supporting descriptor.
+The header and icon set use `assets/beholden-mark.png` / `.webp`: an original abstract bee-bean symbol generated from a client-owned reference. It deliberately omits the reference mascot's face, cup, antennae, limbs, body silhouette, and character pose. The live business name remains text, using Fraunces with a Hanken Grotesk descriptor, so the symbol does not replace readable brand identification.
 
 ## 5. Layout and components
 
@@ -58,19 +58,19 @@ The hero uses `assets/hero-pour-over-bar.webp` with a deliberate deep-navy scrim
 
 ### Specialties
 
-The specialties or flavor-card grid is designed for exactly three cards: Coffee Ritual, Filipino Kitchen, and Cocktails After Dark. It uses three balanced columns on wide screens, two columns at the existing medium breakpoint, and one column on narrow screens.
+The specialties grid is designed for exactly three cards: Coffee Ritual, Signature Drinks, and Coffee & Pastry Pairings. It uses three balanced columns on wide screens, two columns at the existing medium breakpoint, and one column on narrow screens.
 
 ### Menu, gallery, reviews, visit, and form
 
 - The menu remains a tactile panel with clear category headings, dotted leaders, and action-brown prices.
-- Gallery tiles use the approved concept-image set and retain the existing responsive 2-up to 1-up grid.
+- Gallery tiles use a fixed 4:3 crop in a compact 3-up, 2-up, and 1-up responsive grid.
 - Reviews remain in a deep-navy section with navy cards, warm light copy, honey stars, and explicit placeholder disclosure.
 - Visit keeps the contact card and map card as usable grounded panels. `.map-embed` contains the iframe, while `.map-fallback` provides the address and Google Maps link behind it if the embed is unavailable.
 - The form remains a light panel with readable labels, fields, helper copy, and a visible action focus ring.
 
 ## 6. Image-source boundary
 
-The only approved image sources for this teaser-demo are these seven AI-generated concept images:
+The approved visual sources for this teaser-demo are the original generated logo mark and seven AI-generated concept-image families:
 
 1. `assets/hero-pour-over-bar.webp`
 2. `assets/bean-selection-ritual.webp`
@@ -80,7 +80,7 @@ The only approved image sources for this teaser-demo are these seven AI-generate
 6. `assets/evening-cocktails.webp`
 7. `assets/navy-amber-texture.webp`
 
-Do not scrape images from the web. Do not use client photography. Do not imply that concept images depict confirmed products, interiors, staff, or services. Replace them only when approved real brand files and usage rights are available.
+The active page uses the hero, bean-selection, coffee-flight, Davao mocha, and texture families. The Filipino sharing-table and evening-drinks families remain in the repository as unused legacy assets and must not be restored without current owner confirmation. Do not scrape images from the web or imply that concept images depict confirmed products, interiors, staff, or services.
 
 ## 7. Accessibility and motion
 
@@ -100,8 +100,8 @@ Do not scrape images from the web. Do not use client photography. Do not imply t
 
 ### Do not
 
-- Do not present the provisional amber as an official sampled logo color.
+- Do not present the demo palette as trademark clearance or final owner sign-off.
 - Do not use amber for small text on light backgrounds.
-- Do not add a fabricated logo image or bee illustration.
+- Do not redraw the prior mascot, reuse its character silhouette, or present the abstract mark as legally cleared.
 - Do not use scraped or client photography.
 - Do not turn the teaser-demo into a formal luxury coffee brand or expand beyond the approved visual system.
