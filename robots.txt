@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://beholden-coffee-demo.netlify.app/sitemap.xml
