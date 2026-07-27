@@ -40,6 +40,21 @@
     });
   }
 
+  /* ---- brand/logo click: scroll to top ----
+     The header (#top) is position:fixed, so a plain href="#top" anchor is a
+     no-op in most browsers — a fixed element's bounding rect never moves,
+     so native scroll-into-view sees it as already "in view" and scrolls
+     nothing. Handle it in JS instead. ---- */
+  var brandLink = document.querySelector(".brand");
+  if (brandLink) {
+    brandLink.addEventListener("click", function (e) {
+      e.preventDefault();
+      var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      window.scrollTo({ top: 0, left: 0, behavior: reduceMotion ? "auto" : "smooth" });
+      closeNav();
+    });
+  }
+
   /* ---- demo banner offset (keeps the fixed header below the sticky
      "unofficial concept demo" bar; height varies with text wrap) ---- */
   var demoBanner = document.querySelector(".demo-banner");
