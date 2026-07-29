@@ -98,6 +98,7 @@
     <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 4h2.9l1.3 4-2 1.4a11 11 0 0 0 5.3 5.3l1.4-2 4 1.3v2.9a2 2 0 0 1-2.2 2C11.2 19.4 4.6 12.8 4.6 6.2A2 2 0 0 1 6.6 4Z"/></symbol>
     <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" rx="2.2"/><path d="M4 7.2l8 5.4 8-5.4"/></symbol>
     <symbol id="i-chat" viewBox="0 0 24 24"><path d="M5 5h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-8.5L6 19v-3.2H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3.2l2.4 4.95 5.45.55-4.1 3.62 1.2 5.33L12 14.9l-4.95 2.75 1.2-5.33-4.1-3.62 5.45-.55L12 3.2Z"/></symbol>
     <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="4.6"/><circle cx="12" cy="12" r="3.6"/><circle cx="17.2" cy="6.8" r="1.05" fill="currentColor" stroke="none"/></symbol>
   </defs>
 </svg>
@@ -172,7 +173,7 @@
 </section>
 
 <!-- MENU — full priced board; confirm before any public commercial launch. -->
-<section class="section menu" id="menu">
+<section class="section menu section--dark" id="menu">
   <div class="container">
     <div class="section-head reveal">
       <span class="tier-badge"><svg class="ic" aria-hidden="true"><use href="#i-sparkle"/></svg>Business-tier menu</span>
@@ -206,7 +207,7 @@
         <!-- Two-column board: categories ordered so tall + mid-size blocks pack
              without empty grid cells or orphan short columns. Same items/categories. -->
         <div class="menu-cat">
-          <h3 class="menu-cat-title">Coffee <span class="menu-cat-note">C.M. Recto</span></h3>
+          <h3 class="menu-cat-title">Coffee</h3>
           <ul class="menu-list">
             <li class="menu-item"><div class="mi-head"><span class="mi-name">Americano / AFAM</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱150</span></div><p class="mi-desc">Espresso poured over water.</p></li>
             <li class="menu-item"><div class="mi-head"><span class="mi-name">Latte</span><span class="mi-dots" aria-hidden="true"></span><span class="mi-price">₱170</span></div><p class="mi-desc">Espresso with steamed milk.</p></li>
@@ -350,7 +351,13 @@
     <div class="reviews-head reveal">
       <span class="tier-badge"><svg class="ic" aria-hidden="true"><use href="#i-sparkle"/></svg>Business-tier reviews</span>
       <span class="section-num" aria-hidden="true">04</span>
-      <span class="review-mark" aria-hidden="true">Placeholder set</span>
+      <div class="review-mark" aria-hidden="true">
+        <svg class="ic ic--fill"><use href="#i-star"/></svg>
+        <svg class="ic ic--fill"><use href="#i-star"/></svg>
+        <svg class="ic ic--fill"><use href="#i-star"/></svg>
+        <svg class="ic ic--fill"><use href="#i-star"/></svg>
+        <svg class="ic ic--fill"><use href="#i-star"/></svg>
+      </div>
       <h2>Words to come, <em>honestly</em>.</h2>
       <p class="reviews-lead">These cards show the intended review layout while real customer feedback is collected.</p>
     </div>
