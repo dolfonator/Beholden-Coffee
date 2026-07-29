@@ -56,10 +56,10 @@
   --cream-header-mobile: rgba(255,248,232,.96);
   --header-scrim: rgba(19,35,45,.78);
   --header-scrim-soft: rgba(19,35,45,.24);
-  --hero-scrim-top: rgba(19,35,45,.72);
-  --hero-scrim-mid: rgba(19,35,45,.56);
-  --hero-scrim-bottom: rgba(19,35,45,.94);
-  --hero-panel: rgba(19,35,45,.90);
+  --hero-scrim-top: rgba(19,35,45,.62);
+  --hero-scrim-mid: rgba(19,35,45,.42);
+  --hero-scrim-bottom: rgba(19,35,45,.88);
+  --hero-panel: #13232D;
   --honey-border: rgba(245,196,81,.28);
   --honey-ring: rgba(245,196,81,.56);
   --action-ring: rgba(138,91,0,.36);
@@ -361,12 +361,12 @@ h2 em, .hero-title em { font-style: italic; color: var(--action); }
     linear-gradient(180deg, var(--hero-scrim-top) 0%, var(--hero-scrim-mid) 24%, var(--hero-scrim-bottom) 100%),
     url("/assets/hero-pour-over-bar.webp") center/cover no-repeat;
 }
-/* clean navy scrim panel keeps hero copy grounded and legible over the photo */
+/* solid navy panel keeps hero copy grounded and legible over the photo */
 .hero-inner {
   position: relative; max-width: 760px;
   padding: clamp(2.5rem, 1.6rem + 3.4vw, 4rem);
   border-radius: var(--radius);
-  background: var(--hero-panel); backdrop-filter: blur(4px);
+  background: var(--hero-panel);
   box-shadow: var(--shadow-dark);
 }
 .hero .eyebrow { color: var(--honey); margin-bottom: 1.25rem; }
