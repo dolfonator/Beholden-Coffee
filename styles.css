@@ -606,10 +606,17 @@ h2 em, .hero-title em { font-style: italic; color: var(--action); }
 .footer-nav a { font-family: var(--font-head); color: var(--dark-copy-soft); font-weight: 600; font-size: .9rem; }
 .footer-nav a:hover { color: var(--white); text-decoration: underline; text-underline-offset: 3px; }
 .footer-connect { display: flex; flex-direction: column; align-items: flex-start; gap: 1rem; }
-.footer-social { display: flex; flex-wrap: wrap; gap: 1.1rem; font-family: var(--font-head); font-weight: 700; font-size: .9rem; }
-.footer-social a { color: var(--dark-copy-soft); }
-.footer-social a:hover { color: var(--honey); text-decoration: none; }
+.footer-social { display: flex; flex-wrap: wrap; gap: .75rem; }
+.footer-social a {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 44px; height: 44px; border: 1px solid var(--line-dark); border-radius: 50%;
+  color: var(--dark-copy-soft); transition: color .15s ease, background .15s ease, border-color .15s ease;
+}
+.footer-social a:hover { color: var(--honey); background: var(--honey-wash); border-color: var(--honey-border-strong); text-decoration: none; }
+.footer-social a:focus-visible { outline: 3px solid var(--honey); outline-offset: 3px; border-radius: 50%; }
+.footer-social .ic { width: 1.25rem; height: 1.25rem; }
 .footer-connect .btn { padding: .7rem 1.35rem; }
+.footer-connect > .btn-primary { box-shadow: 0 2px 22px rgba(138, 91, 0, .26); }
 .footer-legal { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .4rem 1.5rem; margin-top: var(--space-6); padding-top: 1.4rem; border-top: 1px solid var(--line-dark); }
 .footer-legal p { margin: 0; font-size: .82rem; color: var(--dark-copy-soft); }
 .footer-legal .muted { color: var(--ink-soft); max-width: 68ch; }
