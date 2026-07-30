@@ -58,6 +58,12 @@ All imagery listed below is 100% AI-generated concept imagery. It is not photogr
 - **Source:** `/Users/tristandmac/Claude/Projects/DDM/Prospects/Beholden-Coffee/assets/branding/navy-amber-texture.png` and `.webp`
 - **Intended demo use:** Background and texture accents.
 
+### Nutty pour-over
+
+- **Filename(s):** `assets/nutty-pour-over.png`, `assets/nutty-pour-over.webp`
+- **Source:** `/Users/tristandmac/Claude/Projects/DDM/Prospects/Beholden-Coffee/assets/products/nutty-pour-over.png` and `.webp`
+- **Intended demo use:** Coffee product cards (featured Guatemala Coban “Nutty” pour-over).
+
 ## Icon derivatives
 
 The following files are transparent, centered derivatives of `assets/beholden-mark.png`:

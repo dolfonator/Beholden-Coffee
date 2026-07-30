@@ -622,7 +622,8 @@ h2 em, .hero-title em { font-style: italic; color: var(--action); }
 .footer-connect .btn { padding: .7rem 1.35rem; }
 .footer-legal { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .4rem 1.5rem; margin-top: var(--space-6); padding-top: 1.4rem; border-top: 1px solid var(--line-dark); }
 .footer-legal p { margin: 0; font-size: .82rem; color: var(--dark-copy-soft); }
-.footer-legal .muted { color: var(--ink-soft); max-width: 68ch; }
+.footer-legal .muted { color: var(--ink-soft); max-width: none; flex: 1 1 18rem; }
+.footer-legal .footer-contact { text-align: right; flex: 0 1 auto; }
 
 /* ---------- scroll reveal (light, soft) ---------- */
 .reveal { opacity: 0; transform: translateY(16px); transition: opacity .8s ease, transform .8s ease; }
@@ -662,6 +663,7 @@ h2 em, .hero-title em { font-style: italic; color: var(--action); }
   .footer-nav { justify-content: center; }
   .footer-connect { align-items: center; }
   .footer-legal { justify-content: center; text-align: center; }
+  .footer-legal .footer-contact { text-align: center; }
 }
 @media (max-width: 640px) {
   .hero-actions .btn { flex: 1 1 100%; }
@@ -723,6 +725,18 @@ h2 em, .hero-title em { font-style: italic; color: var(--action); }
 .menu-item { padding: .8rem 0; border-bottom: 1px solid var(--line-dark); }
 .menu-item:first-child { padding-top: 0; }
 .menu-item:last-child { border-bottom: 0; padding-bottom: 0; }
+.menu-item--sub {
+  padding: .35rem 0 .55rem 1rem;
+  border-bottom-color: transparent;
+}
+.menu-item--sub + .menu-item--sub { padding-top: .2rem; }
+.menu-item--sub + .menu-item:not(.menu-item--sub) { border-top: 1px solid var(--line-dark); padding-top: .8rem; }
+.menu-item--sub .mi-name {
+  font-weight: 600;
+  font-size: .94rem;
+  color: var(--dark-copy-soft);
+}
+.menu-item--sub .mi-dots { display: none; }
 .mi-head { display: flex; align-items: baseline; gap: .5rem; }
 .mi-name { font-family: var(--font-head); font-weight: 700; font-size: 1.02rem; color: var(--dark-copy); }
 .mi-dots { flex: 1; align-self: center; border-bottom: 1.5px dotted var(--line-dark); margin: 0 .1rem; }
