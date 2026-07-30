@@ -610,7 +610,7 @@ h2 em, .hero-title em { font-style: italic; color: var(--action); }
 .footer-nav { display: flex; flex-wrap: wrap; gap: .35rem 1.1rem; }
 .footer-nav a { font-family: var(--font-head); color: var(--dark-copy-soft); font-weight: 600; font-size: .9rem; }
 .footer-nav a:hover { color: var(--white); text-decoration: underline; text-underline-offset: 3px; }
-.footer-connect { display: flex; flex-direction: column; align-items: flex-start; gap: 1rem; }
+.footer-connect { display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; gap: .75rem 1rem; }
 .footer-social { display: flex; flex-wrap: wrap; gap: .75rem; }
 .footer-social a {
   display: inline-flex; align-items: center; justify-content: center;
