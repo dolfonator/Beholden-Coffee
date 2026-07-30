@@ -578,7 +578,6 @@ h2 em, .hero-title em { font-style: italic; color: var(--action); }
 .book-copy .about-tags { border-top-color: var(--line-dark); margin-bottom: 0; }
 .book-copy .about-tags li { color: var(--dark-copy-soft); border-color: var(--line-dark); }
 .book-form { background: var(--panel); border-radius: var(--radius); padding: var(--panel-pad); box-shadow: var(--shadow-lg); }
-.book-form .btn-primary { border-color: var(--brand); }
 .field { margin-bottom: 1.1rem; }
 .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem; }
 .field label { display: block; font-family: var(--font-head); font-weight: 600; font-size: .88rem; margin-bottom: .4rem; color: var(--ink); }
