@@ -734,7 +734,7 @@ h2 em, .hero-title em { font-style: italic; color: var(--action); }
 .menu-item--sub .mi-name {
   font-weight: 600;
   font-size: .94rem;
-  color: var(--dark-copy-soft);
+  color: var(--dark-copy); /* same primary white as parent drink names */
 }
 .menu-item--sub .mi-dots { display: none; }
 .mi-head { display: flex; align-items: baseline; gap: .5rem; }
