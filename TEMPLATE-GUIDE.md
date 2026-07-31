@@ -41,7 +41,9 @@ For this site, the existing palette in `styles.css` is the source of truth: ambe
 
 ## SEO and domain files
 
-The neutral placeholder origin is `https://beholden-coffee-demo.netlify.app`. Keep it consistent in canonical metadata, Open Graph/Twitter URLs and images, JSON-LD, `robots.txt`, and `sitemap.xml` while this is a teaser. The sitemap `lastmod` is `2026-07-22`.
+The placeholder origin is `https://demo-beholdencoffee.netlify.app` — 13 references across `index.html`, `thanks.html`, `robots.txt`, `sitemap.xml`, and `site.webmanifest`. Keep it consistent in canonical metadata, Open Graph/Twitter URLs and images, JSON-LD, `robots.txt`, and `sitemap.xml` while this is a teaser. The sitemap `lastmod` is `2026-07-22`.
+
+> Verify the origin against the URL actually presented before sending any link. A metas-vs-live mismatch renders a broken link preview in Messenger/Viber — it has already happened twice on other DDM teasers.
 
 The teaser remains noindex. The paid-conversion process at the top of this file removes the noindex line only after owner sign-off and content confirmation.
 
@@ -51,6 +53,40 @@ This is a static site with no build step. Deploy the private teaser demo to Verc
 
 Vercel is a teaser-demo/portfolio target only while the account is on Hobby. Vercel Hobby must not host a paid commercial client build. Netlify is the sole production-commercial hosting target under DDM's current rule. After the three reversions and owner sign-off, deploy the paid site to the client's own hosting and custom domain.
 
+## Activating the inquiry form (paid conversion)
+
+**No backend is ever added.** The form posts to **Formspree**, a third-party endpoint, so the site stays plain static HTML with no build step and no server. Revert step (2) at the top of this file is the summary; this is the full procedure.
+
+### What currently keeps the form inert
+
+| Piece | State today | Where |
+|---|---|---|
+| Form `action` | placeholder `https://formspree.io/f/YOUR_FORM_ID` | `index.html:457` |
+| Submit intercept | `preventDefault()` → `/thanks.html`, no network call | `script.js:73-80` |
+| `_subject` / `_next` hidden fields | point at `demo-beholdencoffee.netlify.app` | `index.html:458-459` |
+
+A prospect can fill the form in during a demo and get a convincing thank-you page, with nothing sent anywhere.
+
+### Steps, in order
+
+1. **Create the form** at <https://formspree.io> → Dashboard → New form → copy the ID after `/f/`. Create it under **the client's own account** where possible — same principle as registering the domain under the client and managing it on their behalf.
+2. **Replace `YOUR_FORM_ID`** in the form `action` at `index.html:457`.
+3. **Delete the teaser-demo intercept block** in `script.js` (lines 73–80, the whole commented block). Leaving it in place silently swallows every real submission — the form will look like it works and send nothing.
+4. **Update the two hidden fields** at `index.html:458-459` to the client's final domain:
+   - `_subject` — the subject line the client sees on every notification email.
+   - `_next` — the post-submit redirect. **If this still points at the demo Netlify URL, a real customer is bounced to a dead host after submitting.** This is the step most often missed.
+5. **Update `thanks.html`** — its canonical (`thanks.html:9`) also carries the demo origin.
+6. **Confirm the address.** Formspree requires the destination address to be confirmed on the first submission; until someone does that, the form is silently inert. Send one real test submission and verify it (a) lands in the client's inbox and (b) redirects to `thanks.html`.
+
+### Do not remove
+
+- **The honeypot.** `_gotcha` at `index.html:460` is spam protection Formspree reads natively. It is not a demo artifact — keep it.
+- **The `required` attributes and `autocomplete` hints** on the fields; they are the accessibility/UX baseline, not scaffolding.
+
+### Scope note for the client conversation
+
+The free Formspree tier caps monthly submissions. That is ample for a café inquiry form, but if volume ever exceeds it the fix is a paid upgrade **on the client's own Formspree account**, not a rebuild. Raise it at scoping so it never reads as a surprise later.
+
 ## Handover checklist
 
 - [ ] Owner approves the Beholden Coffee logo, copy, menu, prices, rotating items, hours, C.M. Recto address, contact details, and social links.
@@ -58,6 +94,8 @@ Vercel is a teaser-demo/portfolio target only while the account is on Hobby. Ver
 - [ ] Any replacement photography is client-provided or otherwise licensed with permission.
 - [ ] The noindex line is removed only for the approved paid build.
 - [ ] The teaser submit intercept is removed and the real Formspree ID is set.
+- [ ] `_subject` and `_next` are updated to the client's final domain (not the demo Netlify URL).
+- [ ] The Formspree destination address is confirmed, and one real test submission has landed in the inbox and redirected to `thanks.html`.
 - [ ] The `demo-banner` div and its offset JS are removed.
 - [ ] The paid build is deployed to the client's own hosting and custom domain.
 - [ ] Canonical, JSON-LD, social metadata, robots, and sitemap are updated to the client's approved domain.
